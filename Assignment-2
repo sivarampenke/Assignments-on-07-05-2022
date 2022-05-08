@@ -1,0 +1,17 @@
+#program to store yes for perfact square keys and no for other from 1 to 1000,ex:{1:yes,2:no,3:no,4:yes}
+def perfectsquare(x):
+    if (x**(0.5)==int(x**(0.5))):
+        return True
+    return False
+    
+n=int(input())
+l=[]
+d={}
+for i in range(n):
+    l.append(i)
+for i in l:
+    if perfectsquare(i):
+        d[i]='yes'
+    else:
+        d[i]='no'
+print(d)
